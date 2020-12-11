@@ -1,0 +1,37 @@
+.step {
+  height: 100%;
+  .step-tip {
+    color: #EC6941;
+    font-size: 0.16rem;
+    margin-bottom: 0.2rem;
+  }
+  input {
+    -webkit-appearance: none;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 0.1rem;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: 0.14rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    outline: none;
+    padding: 0.15rem 0.15rem 0.15rem 0.5rem;
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    width: 100%;
+  }
+  input::-webkit-input-placeholder{
+    color:#C9C9C9;
+  }
+  input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#C9C9C9;
+  }
+  input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#C9C9C9;
+  }
+  input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color:#C9C9C9;
+  }
+}

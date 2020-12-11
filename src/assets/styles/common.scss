@@ -1,0 +1,374 @@
+.fl {
+  float: left;
+}
+.fr{
+  float: right;
+}
+// 清除浮动
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1; 
+}
+// 单行溢出省略
+.txt-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+// 两行文本溢出
+.two-line {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.m-1200, .margin {
+  width: 1200PX;
+  margin: 0 auto;
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #CBCBCB;
+}
+
+// 面包屑样式
+.breadcrumb-wrap {
+  height: 44px;
+  line-height: 42px;
+  background: #eee;
+  font-size: 14px;
+  color: #51585e;
+  border-top: 2px solid #0061b0;
+  .breadcrumb {
+    width: 1200PX;
+    margin: 0 auto;
+  }
+}
+// 课程中心banner样式
+.college-banner-wrap {
+  width: 100%;
+  height: 82px;
+  background: #fff;
+  .college-banner {
+    width: 1200PX;
+    height: 82px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #464C51;
+    display: flex;
+    align-items: center;
+    .title {
+      font-size: 26px;
+      margin-right: 30px;
+      font-weight: bold;
+    }
+  }
+}
+
+
+//右侧悬浮框
+.rightBox {
+  width: 60px;
+  height: 320px;
+  position: fixed;
+  top: 30%;
+  right: 20px;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+
+// 加入意向课程
+.btn-enjoy {
+  height: 44px;
+  padding: 0 20px;
+  background: #32b16c;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  line-height: 44px;
+  cursor: pointer;
+  align-items: center;
+  .icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/icon/wujiaoxing.png) no-repeat;
+    background-size: 100%;
+    margin-right: 5px;
+  }
+}
+// 立即报名-按钮
+.btn-apply {
+  height: 44px;
+  padding: 0 20px;
+  background: #ec6941;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  line-height: 44px;
+  cursor: pointer;
+  align-items: center;
+  .icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/icon/edit.png) no-repeat;
+    background-size: 100%;
+    margin-right: 5px;
+  }
+}
+
+.more-btn {
+  width: 150px;
+  height: 43px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  background: white;
+  border: 1px solid #005bac;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #0061b0;
+  line-height: 43px;
+  cursor: pointer;
+}
+.no-data {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: #363b40;
+  line-height:30px;
+}
+
+// 按钮样式
+.btn-blue {
+  height: 30px;
+  line-height: 28px;
+  padding: 0 17px;
+  background: #0061B3;
+  color: #fff;
+  border: 1px solid #0061B3;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.btn-default {
+  height: 30px;
+  line-height: 28px;
+  padding: 0 17px;
+  background: #fff;
+  color: #5C6368;
+  border: 1px solid #afafaf;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.my-banner-wrapper {
+  width: 100%;
+  height: 126px;
+  background: url('../images/classBanner.png') no-repeat center;
+  background-size: 100% 100%;
+}
+// 项目信息-样式
+.project-info-box {
+  padding: 22px;
+  dl {
+    display: flex;
+    margin-top: -1px;
+    border: 1px solid #eceef0;
+    dt {
+      width: 130px;
+      padding: 8px 20px;
+      line-height: 28px;
+      border-right: 1px solid #eceef0;
+      color: #87898a;
+    }
+    dd {
+      flex: 1;
+      padding: 8px 20px;
+      line-height: 28px;
+      color: #51585E;
+    }
+  }
+}
+// 学员表格样式
+.el-table th {
+  background: #f2f6f9;
+}
+.table-wrapper {
+  .btn-area {
+    margin-bottom: 16px;
+  }
+  .doc-download {
+    margin-left: 20px;
+    text-decoration: underline;
+  }
+  [class^='icon-']  {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/icon/icon-qrcode.png') no-repeat left top;
+    margin-right: 4px;
+  }
+  .el-table {
+    .icon-view,
+    .icon-edit,
+    .icon-delete {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+    .icon-view {
+      background-image: url('../images/icon/icon-view.png');
+    }
+    .icon-edit {
+      background-image: url('../images/icon/icon-edit.png');
+    }
+    .icon-delete {
+      background-image: url('../images/icon/icon-delete.png');
+    }
+  }
+}
+
+// 进度条样式
+.step-process {
+ 
+  margin-top: 20px; 
+  /deep/ .el-step {
+    width: 160px;
+  }
+  /deep/ .el-step__line {
+    background: #fff;
+    top: 14px;
+  }
+  /deep/ .el-step__icon-inner {
+    color: #666;
+  }
+  /deep/ .el-icon-check {
+    color: #67c23a;
+    font-weight: bold;
+  }
+  /deep/ .el-step__title.is-wait {
+    color: #fff;
+  }
+  /deep/ .el-step__icon.is-text {
+    border: 0 none;
+  }
+  /deep/ .el-step__icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+  }
+  /deep/ .el-step__title.is-process {
+    color: #ffff00;
+  }
+  /deep/ .is-process .el-step__icon {
+    background: #ffff00;
+  }
+}
+
+.section-wrapper {
+  width: 1200PX;
+  margin: 20px auto;
+  background: #fff;
+  border: 1px solid #c8c8c8;
+  .section-header {
+    height: 34px;
+    line-height: 34px;
+    color: #b5bcc1;
+    padding-left: 22px;
+    background: #f2f5f8;
+  }
+  .section-body {
+    padding: 20px 36px;
+  }
+}
+
+// 表单样式
+.el-form {
+  width: 100%;
+  .el-select,
+  .el-input,
+  .el-range-editor.el-input__inner {
+    width: 478px;
+  }
+  /deep/ .el-date-editor .el-range-input {
+    text-align: left;
+    padding-left: 10px;
+  }
+  .el-checkbox.is-bordered {
+    background: #fff;
+  }
+  .hotel-info {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px 0 10px 0;
+    border-top: 1px dashed #ccc;
+  }
+  .meal-info {
+    width: 100%;
+    margin: 30px 0;
+    padding: 20px 0 10px 0;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+  }
+  .meal-select {
+    float: left;
+  }
+  a {
+    text-decoration: underline;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .el-textarea {
+    width: 478px;
+    /deep/ .el-textarea__inner {
+      height: 100px;
+      resize: none;
+    }
+  }
+  .select-date {
+    .el-form-item__content {
+      display: flex;
+      .el-input {
+        width: 222px;
+      }
+    }
+    .line {
+      margin: 0 10px;
+      color: #ccc;
+    }
+  }
+  .select-date /deep/ .el-form-item__content {
+    display: flex;
+  }
+  /deep/ .ql-container {
+    height: 260px;
+  }
+}
+
